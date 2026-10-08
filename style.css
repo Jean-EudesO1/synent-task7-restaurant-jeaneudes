@@ -344,6 +344,124 @@ h1 {
   font-size: clamp(2.5rem, 5vw, 4rem);
 }
 
+.page-intro {
+  padding-block: 68px 30px;
+}
+
+.page-intro h1 {
+  max-width: 760px;
+  margin-bottom: 16px;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+}
+
+.page-intro > p:last-child {
+  max-width: 680px;
+  margin-bottom: 0;
+  color: var(--color-muted);
+  font-size: 1.08rem;
+}
+
+.about-story {
+  display: grid;
+  padding-block: 28px 76px;
+  align-items: center;
+  gap: clamp(36px, 7vw, 82px);
+  grid-template-columns: 1fr 0.85fr;
+}
+
+.about-story h2 {
+  margin-bottom: 18px;
+  font-size: clamp(2rem, 3.4vw, 2.8rem);
+}
+
+.about-story__copy > p:not(.eyebrow) {
+  color: var(--color-muted);
+}
+
+.about-story__image {
+  margin: 0;
+}
+
+.about-story__image img {
+  width: 100%;
+  max-height: 470px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: var(--shadow-card);
+}
+
+.about-story__image figcaption {
+  margin-top: 9px;
+  color: var(--color-muted);
+  font-size: 0.82rem;
+}
+
+.about-values {
+  background: #f1ecdf;
+}
+
+.value-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.value-card {
+  padding: 26px;
+  background: var(--color-paper);
+  border: 1px solid var(--color-line);
+  border-radius: 8px;
+}
+
+.value-card__number {
+  display: inline-block;
+  margin-bottom: 16px;
+  color: var(--color-orange-dark);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.value-card h3,
+.team-card h3 {
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+}
+
+.value-card p,
+.team-card p {
+  margin-bottom: 0;
+  color: var(--color-muted);
+}
+
+.team-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.team-card {
+  padding: 24px;
+  background: var(--color-paper);
+  border-top: 3px solid var(--color-orange);
+  border-radius: 0 0 8px 8px;
+  box-shadow: var(--shadow-card);
+}
+
+.team-card__role {
+  margin: -3px 0 12px;
+  color: var(--color-orange-dark) !important;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.fiction-note {
+  margin: 22px 0 0;
+  color: var(--color-muted);
+  font-size: 0.85rem;
+  text-align: center;
+}
+
 .site-footer {
   color: #f4f1e9;
   background: var(--color-green-deep);
@@ -400,6 +518,10 @@ h1 {
     height: 330px;
   }
 
+  .about-story {
+    grid-template-columns: 1fr;
+  }
+
   .site-footer__inner {
     align-items: flex-start;
     flex-direction: column;
@@ -445,6 +567,15 @@ h1 {
 
   .dish-card img {
     height: 240px;
+  }
+
+  .page-intro {
+    padding-block: 48px 20px;
+  }
+
+  .value-grid,
+  .team-grid {
+    grid-template-columns: 1fr;
   }
 }
 
