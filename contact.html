@@ -26,10 +26,63 @@
         </nav>
       </div>
     </header>
-    <main id="contenu" class="page-width placeholder-page">
-      <p class="eyebrow">Parlons de votre projet</p>
-      <h1>Contact</h1>
-      <p>Le contenu de cette page sera créé à l’étape 4.</p>
+    <main id="contenu">
+      <section class="page-intro page-width">
+        <p class="eyebrow">Parlons de votre projet</p>
+        <h1>Nous serions heureux de vous accueillir</h1>
+        <p>Une question sur un repas ou un événement ? Retrouvez nos coordonnées d’exemple ou écrivez-nous via le formulaire de démonstration.</p>
+      </section>
+
+      <section class="contact-section section-space" aria-labelledby="contact-details-title">
+        <div class="page-width contact-layout">
+          <div class="contact-details">
+            <p class="eyebrow">Nous trouver</p>
+            <h2 id="contact-details-title">Coordonnées et horaires</h2>
+            <p class="contact-example-note">Toutes les coordonnées et heures ci-dessous sont fictives et fournies à titre d’exemple.</p>
+            <dl class="contact-list">
+              <div>
+                <dt>Adresse</dt>
+                <dd>Cocody, Abidjan, Côte d’Ivoire (exemple)</dd>
+              </div>
+              <div>
+                <dt>Téléphone</dt>
+                <dd>+225 07 00 00 00 00 (exemple)</dd>
+              </div>
+              <div>
+                <dt>E-mail</dt>
+                <dd>contact@saveurs-ivoire.example</dd>
+              </div>
+            </dl>
+            <h3 class="hours-title">Horaires indicatifs</h3>
+            <dl class="hours-list">
+              <div><dt>Mardi – dimanche</dt><dd>11 h 30 – 22 h</dd></div>
+              <div><dt>Lundi</dt><dd>Fermé</dd></div>
+            </dl>
+          </div>
+
+          <div class="contact-form-panel">
+            <p class="eyebrow">Écrivez-nous</p>
+            <h2>Formulaire de contact</h2>
+            <p class="contact-example-note">Démo uniquement : ce formulaire valide les champs dans votre navigateur, mais ne transmet ni ne stocke de message.</p>
+            <form id="contact-form" method="post">
+              <div class="form-field">
+                <label for="name">Nom</label>
+                <input id="name" name="name" type="text" autocomplete="name" minlength="2" required>
+              </div>
+              <div class="form-field">
+                <label for="email">E-mail</label>
+                <input id="email" name="email" type="email" autocomplete="email" required>
+              </div>
+              <div class="form-field">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" minlength="10" required></textarea>
+              </div>
+              <button class="button button--primary" type="submit">Vérifier le formulaire</button>
+              <p class="form-status" id="form-status" role="status" aria-live="polite" hidden></p>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="site-footer">
       <div class="page-width site-footer__inner">
