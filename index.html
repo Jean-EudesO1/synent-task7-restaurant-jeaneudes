@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Découvrez Saveurs d’Ivoire, une table fictive inspirée de la cuisine ivoirienne.">
+    <title>Saveurs d’Ivoire | Accueil</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#contenu">Aller au contenu principal</a>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="brand" href="index.html" aria-label="Saveurs d’Ivoire, accueil">
+          <span class="brand__mark" aria-hidden="true">S</span>
+          <span>Saveurs <span class="brand__accent">d’Ivoire</span></span>
+        </a>
+        <nav class="site-nav" aria-label="Navigation principale">
+          <ul>
+            <li><a href="index.html" aria-current="page">Accueil</a></li>
+            <li><a href="about.html">À propos</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="contenu">
+      <section class="hero page-width" aria-labelledby="hero-title">
+        <div class="hero__copy">
+          <p class="eyebrow">La Côte d’Ivoire dans votre assiette</p>
+          <h1 id="hero-title">Un goût de chez nous,<br><span>à chaque bouchée.</span></h1>
+          <p class="hero__description">Bienvenue chez Saveurs d’Ivoire, une adresse fictive où les recettes généreuses et les bons moments se partagent autour de la table.</p>
+          <div class="button-row">
+            <a class="button button--primary" href="services.html">Découvrir nos services</a>
+            <a class="button button--outline" href="contact.html">Nous contacter</a>
+          </div>
+        </div>
+        <figure class="hero__image">
+          <img src="images/restaurant.jpg" alt="Intérieur chaleureux du restaurant Saveurs d’Ivoire">
+          <figcaption>La convivialité au cœur de chaque repas</figcaption>
+        </figure>
+      </section>
+
+      <section class="welcome section-space" aria-labelledby="welcome-title">
+        <div class="page-width welcome__inner">
+          <div>
+            <p class="eyebrow">Bienvenue à notre table</p>
+            <h2 id="welcome-title">Des recettes qui racontent la Côte d’Ivoire</h2>
+          </div>
+          <p>Des produits soigneusement choisis, des plats inspirés de nos traditions et une ambiance accueillante : Saveurs d’Ivoire célèbre le plaisir simple de bien manger ensemble.</p>
+        </div>
+      </section>
+
+      <section class="dishes section-space page-width" aria-labelledby="dishes-title">
+        <div class="section-heading">
+          <p class="eyebrow">Nos incontournables</p>
+          <h2 id="dishes-title">Un trio plein de caractère</h2>
+          <p>Trois classiques à retrouver à notre table.</p>
+        </div>
+        <div class="dish-grid">
+          <article class="dish-card">
+            <img src="images/attieke-poisson.jpg" alt="Attiéké servi avec du poisson">
+            <div class="dish-card__body">
+              <h3>Attiéké-poisson</h3>
+              <p>L’attiéké accompagne un poisson savoureux dans ce grand classique convivial.</p>
+            </div>
+          </article>
+          <article class="dish-card">
+            <img src="images/alloco-poulet.jpg" alt="Alloco accompagné de poulet">
+            <div class="dish-card__body">
+              <h3>Alloco-poulet</h3>
+              <p>Des bananes plantain dorées, servies avec du poulet pour un plat généreux.</p>
+            </div>
+          </article>
+          <article class="dish-card">
+            <img src="images/sauce-graine.jpg" alt="Sauce graine servie avec du foutou">
+            <div class="dish-card__body">
+              <h3>Sauce graine avec foutou</h3>
+              <p>Une sauce parfumée et un foutou fondant, pour retrouver le goût du partage.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="page-width site-footer__inner">
+        <a class="brand brand--footer" href="index.html">Saveurs <span class="brand__accent">d’Ivoire</span></a>
+        <p>Restaurant fictif — projet de démonstration.</p>
+        <p class="site-footer__copy">&copy; 2026 Saveurs d’Ivoire</p>
+      </div>
+    </footer>
+  </body>
+</html>
